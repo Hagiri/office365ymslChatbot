@@ -1,0 +1,2 @@
+# office365ymslChatbot
+仮想組織のoffice365情報へアクセスするchatbot作成のため
