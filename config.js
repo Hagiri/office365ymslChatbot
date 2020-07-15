@@ -1,7 +1,8 @@
 const msalConfig = {
   auth: {
-    clientId: '2aa23749-177c-4650-be79-a7f92385eac1',
-    redirectUri: 'https://office365ymslchatbot.azurewebsites.net'
+	  //アプリの登録でのアプリケーションIDとリダイレクトURIの設定（Test-graphApp）
+    clientId: '76c4668f-7f7d-49bf-a96c-aa30bf39cee4',
+    redirectUri: 'http://localhost/app/'
   },
   cache: {
     cacheLocation: "sessionStorage",
