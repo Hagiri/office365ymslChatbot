@@ -1,7 +1,7 @@
 const msalConfig = {
   auth: {
     clientId: '2aa23749-177c-4650-be79-a7f92385eac1',
-    redirectUri: 'https://hagiri.github.io/office365ymslchatbot/'
+    redirectUri: 'https://office365ymslChatbot.azurewebsites.net'
   },
   cache: {
     cacheLocation: "sessionStorage",
