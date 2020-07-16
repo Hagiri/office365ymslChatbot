@@ -7,33 +7,33 @@ if (msalClient.getAccount() && !msalClient.isCallback(window.location.hash)) {
   updatePage(msalClient.getAccount(), Views.home);
 }
 
-async function signIn() {
-  // Login
-  try {
-    await msalClient.loginPopup(loginRequest);
-    console.log('id_token acquired at: ' + new Date().toString());
-    if (msalClient.getAccount()) {
-      updatePage(msalClient.getAccount(), Views.home);
-    }
-  } catch (error) {
-    console.log(error);
-    updatePage(null, Views.error, {
-      message: 'Error logging in',
-      debug: error
-    });
-  }
+// async function signIn() {
+//   // Login
+//   try {
+//     await msalClient.loginPopup(loginRequest);
+//     console.log('id_token acquired at: ' + new Date().toString());
+//     if (msalClient.getAccount()) {
+//       updatePage(msalClient.getAccount(), Views.home);
+//     }
+//   } catch (error) {
+//     console.log(error);
+//     updatePage(null, Views.error, {
+//       message: 'Error logging in',
+//       debug: error
+//     });
+//   }
+// }
+
+// function signOut() {
+//   msalClient.logout();
+// }
+
+function signIn() {
+ // TEMPORARY
+ updatePage({name: 'Megan Bowen', userName: 'meganb@contoso.com'});
 }
 
 function signOut() {
-  msalClient.logout();
+// TEMPORARY
+ updatePage();
 }
-
-//function signIn() {
-//  // TEMPORARY
-//  updatePage({name: 'Megan Bowen', userName: 'meganb@contoso.com'});
-//}
-//
-//function signOut() {
-// // TEMPORARY
-//  updatePage();
-//}
